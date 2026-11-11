@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hearsay"
+version = "0.1.0"
+description = "Flag facts in multi-agent traces that an agent repeats or acts on without ever observing them"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "Md Rashedul Hasan"}]
+
+[project.scripts]
+hearsay = "hearsay.cli:main"
+
+[tool.setuptools]
+packages = ["hearsay"]
